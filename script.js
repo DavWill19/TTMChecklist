@@ -12,6 +12,7 @@ let myDIV4 = document.querySelector('#myDIV4');
 let myDIV5 = document.querySelector('#myDIV5');
 let myDIV6 = document.querySelector('#myDIV6');
 let myDIV7 = document.querySelector('#myDIV7');
+let checkbox2 = document.querySelectorAll(".checkbox:checked");
 
 /// check box stuff
 
@@ -20,6 +21,7 @@ function uncheck() {
   let unchecked1 = document.querySelector("#unchecked");
   let checkbox1 = document.querySelectorAll(".checkbox:not(:checked)");
   let h31 = document.createElement('h1');
+  console.log(checkbox1.length);
 
   
   incomplete.append(h31.textContent = "Incomplete: ");
@@ -92,11 +94,7 @@ function submit1() {
   addNotesOutside("TTM In Notes: ", myDIV.textContent);
   addNotesDr("TTM Through Notes: ", myDIV2.textContent);
   addNotesPUW("TTM Out: ", myDIV3.textContent);
-  addNotesProd("Production Notes: ", myDIV4.textContent);
-  addNotesFront("Frontline Notes: ", myDIV5.textContent);
-  addNotesBack("Backroom Notes: ", myDIV6.textContent);
-  addNotesSys("Systems Notes: ", myDIV7.textContent);
-  document.querySelector(".container1").innerHTML ="";
+  document.querySelector(".container1").innerHTML = "";
   };
 
 // Dealing with Input width
