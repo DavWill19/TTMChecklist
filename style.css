@@ -1,3 +1,42 @@
+#div1, #div2, #div3, #div4, #div5, #div6, #div7, #unchecked {
+margin: 5px;
+
+}
+.input,
+.textarea {
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 1px 6px;
+}
+
+.input-wrap {
+  position: relative;
+}
+.input-wrap .input {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.width-machine {
+  /*   Sort of a magic number to add extra space for number spinner */
+  padding: 0 1rem;
+}
+
+.textarea {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  resize: both;
+  min-height: 40px;
+  line-height: 20px;
+  background-color: white;
+}
+
+.textarea[contenteditable]:empty::before {
+  content: "Notes:";
+  color: black;
+}
 .sticky {
   position: -webkit-sticky;
   position: sticky;
@@ -223,4 +262,13 @@ h1 {
   to {
     transform: rotate(360deg);
   }
+}
+
+.after {
+  font-family: "Roboto", sans-serif;
+  color: #c91c1c;
+}
+.incomplete {
+  font-size: 30px;
+  color: #c91c1c;
 }
